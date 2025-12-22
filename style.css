@@ -1,0 +1,121 @@
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2,
+h3 {
+  color: #555;
+}
+
+.inventory-section,
+.sales-section,
+.sales-history-section {
+  margin-bottom: 30px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.add-item,
+.new-sale {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.add-item input[type="text"],
+.add-item input[type="number"],
+.new-sale input[type="number"],
+.new-sale select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex-grow: 1;
+}
+
+.add-item button,
+.new-sale button,
+#complete-sale-btn {
+  padding: 8px 15px;
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-item button:hover,
+.new-sale button:hover,
+#complete-sale-btn:hover {
+  background-color: #4cae4c;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th,
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #eee;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.total {
+  margin-top: 15px;
+  text-align: right;
+  font-size: 1.2em;
+}
+
+.total strong {
+  color: #333;
+}
+
+.sale-item-actions button,
+.inventory-actions button {
+  padding: 5px 10px;
+  margin-left: 5px;
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+.sale-item-actions button:hover,
+.inventory-actions button:hover {
+  background-color: #c9302c;
+}
+
+@media (max-width: 450px) and (orientation: portrait) {
+  html,
+  body {
+    font-size: 70%;
+  }
+}
